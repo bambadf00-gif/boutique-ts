@@ -1,6 +1,6 @@
-type Categorie = "vetements" | "chaussures" | "accessoires" | "maison";
+export type Categorie = "vetements" | "chaussures" | "accessoires" | "maison";
 
-type Produit = {
+export type Produit = {
   readonly id: number;
   nom: string;
   prix: number;
@@ -8,7 +8,7 @@ type Produit = {
   stock: number;
 };
 
-type LignePanier = {
+export type LignePanier = {
   produit: Produit;
   quantite: number;     
 };
